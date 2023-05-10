@@ -33,12 +33,6 @@ ALTER TABLE products ADD COLUMN branch_id INT NOT NULL;
 
 
 
-ALTER TABLE products
-ADD CONSTRAINT pk_product
-PRIMARY KEY (id);
-
-ALTER TABLE products DROP CONSTRAINT pk_product;
-
 CREATE SEQUENCE products_id_seq
 AS Integer START 1 OWNED BY products.id;
 
