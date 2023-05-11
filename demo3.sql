@@ -102,6 +102,6 @@ BEGIN
 END;$$;
 
 -- withdraw 600
-SELECT withdraw(1, 600.0);
+SELECT withdraw(1, 100.0);
 SELECT * FROM accounts;
 
